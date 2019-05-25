@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova.ttf") format("truetype");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ProximaNova", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.page {
+  padding-top: 111px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.top-contain {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.top-menu {
+  background-color: #222222;
+  height: 36px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.menu {
+  background-color: #111111;
+  height: 75px;
+  display: flex;
+}
+
+.menu img {
+  vertical-align: middle;
+}
+
+.menu a {
+  height: 75px;
+  display: inline-block;
+  padding: 0 100px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  height: 75px;
+  line-height: 75px;
+}
+
+.menu li:hover {
+  background-color: #3a54d6;
+}
+
+.menu li:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.logo-img {
+  width: 150px;
+  height: 50px;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.block-content {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bg-top {
+  position: relative;
+  min-height: 235px;
+  display: flex;
+  background-size: 100%;
+}
+
+.bg-top-catalog {
+  background: url("../img/bg-top-catalog.jpg") no-repeat;
+}
+
+.bg-top-basket {
+  background: #3a54d6;
+}
+
+h1.basket-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.top-contain-bask {
+  display: flex;
+  align-items: center;
+}
+
+.basket-prod-block {
+  z-index: 300;
+  margin-top: -75px;
+  background-color: #ffffff;
+}
+
+.page-head--darken:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 235px;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
+.good-block {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  /*outline: none;*/
+  padding: 20px;
+}
+
+.good-block:nth-child(4n+1), .good-block:nth-child(4n+2), .good-block:nth-child(4n+3) {
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.good-block:nth-child(4n) {
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.good-block:last-child {
+  border-right: 1px solid #e6e6e6;
+}
+
+.good-block:hover {
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.35);
+}
+
+.good-text {
+  align-self: flex-start;
+}
+
+.price {
+  color: #3a54d6;
+  font-weight: 600;
+}
+
+.good-text h4 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+  max-height: 3em;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.catalog {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.catalog-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.photo.catalog {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.photo.catalog a {
+  width: 100%;
+  text-align: center;
+}
+
+.good-block:hover .buy-btn.catalog {
+  display: inline-block;
+}
+
+.buy-btn.catalog {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blue-btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #3a54d6;
+  padding: 10px 30px;
+  color: #FFFFFF;
+  line-height: 1.3em;
+}
+
+.blue-btn:hover {
+  background: #FFFFFF;
+  color: #3a54d6;
+  border: 2px solid #3a54d6;
+}
+
+a.photo {
+  display: block;
+}
+
+
+.card-block {
+  margin-top: 50px;
+  display: flex;
+}
+
+.card-title {
+  z-index: 1;
+  font-weight: normal;
+  color: #FFFFFF;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+
+.card-content .price {
+  font-size: 30px;
+}
+
+.card-img img{
+  border: 1px solid #e6e6e6;
+  margin-right: 50px;
+}
+
+.card-block-buy {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-block-desc {
+  margin: 50px;
+}
+
+.card-desc-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.auth-form {
+  max-width: 430px;
+  margin: auto;
+  text-align: center;
+}
+
+.auth-form-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid #d8d8d8;
+  outline: none;
+  color: #a6a6a6;
+  line-height: 1.3em;
+  border-radius: 10px;
+  transition: border-color 0.35s;
+  width: 100%;
+  font-size: 14px;
+  font-family: "ProximaNova";
+}
+
+.auth-form input {
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.auth #login, .auth #logout {
+  font-size: 13px;
+  color: #FFFFFF;
+  border-bottom: 1px solid transparent;
+}
+
+#login:hover, #logout:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.auth .welcome {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.auth .welcome::after {
+  content: '/';
+  margin: 0 10px;
+}
+
+.auth-block {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: 0.35s;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-block-content {
+  position: relative;
+  padding: 30px 40px;
+  background: #ffffff;
+  max-width: 500px;
+  max-height: calc(100vh - 30px);
+  width: 100%;
+}
+
+.auth-block-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.auth-btn {
+  margin-top: 10px;
+}
+
+input.auth-btn {
+  color: #ffffff;
+  width: auto;
+}
+
+.close-auth-btn {
+  background: url("../img/close-btn.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.auth-save {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  margin-bottom: 0;
+}
